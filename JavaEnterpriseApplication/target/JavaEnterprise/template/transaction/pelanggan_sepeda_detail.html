@@ -1,0 +1,123 @@
+<div class="mainbar">
+
+    <!-- Page heading -->
+    <div class="page-head">
+        <!-- Page heading -->
+        <h2 class="pull-left">
+            Transaksi
+            <!-- page meta -->
+
+        </h2>
+        <div class="clearfix"></div>
+
+    </div>
+    <!-- Page heading ends -->
+
+
+    <!-- Matter -->
+
+    <div class="matter">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+
+                    <div class="widget wlightblue">
+
+                        <div class="widget-head">
+                            <div class="pull-left">{{title}}</div>
+                            <div class="widget-icons pull-right">
+                                <a ng-click="cancel()" class="wclose"><i class="icon-remove"></i></a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="widget-content">
+                            <div class="padd">
+
+                                <!-- Form starts.  -->
+                                <form name="pelangganSepedaDetailForm" class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label class="col-md-2">Id</label>
+
+                                        <label class="col-md-5">
+                                            <strong>{{trsepeda.id}}</strong>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2">Id Pelanggan</label>
+
+                                        <label class="col-md-5">
+                                            <strong>{{trsepeda.pelanggan.id}}</strong>
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Nama Pelanggan</label>
+
+                                        <label class="col-md-5">
+                                            <strong>{{trsepeda.pelanggan.nmplgn}}</strong>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="col-md-2">Id Sepeda</label>
+
+                                        <label class="col-md-5">
+                                            <strong>{{trsepeda.sepeda.id}}</strong>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="col-md-2">Merek Sepeda</label>
+
+                                        <label class="col-md-5">
+                                            <strong>{{trsepeda.sepeda.merek}}</strong>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2">Tanggan Sewa</label>
+
+                                        <label class="col-md-5">
+                                            <strong>{{trsepeda.tglsewa}}</strong>
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Tanggal Kembali</label>
+
+                                        <label class="col-md-5">
+                                            <strong>{{trsepeda.tglkembali}}</strong>
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Harga Sewa</label>
+
+                                        <label class="col-md-5">
+                                            <strong>{{trsepeda.hargasewa}}</strong>
+                                        </label>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+
+
+                        <div class="widget-foot">
+                            <div class="text-right">
+                                <button type="button" ng-click="cancel()" class="btn btn-danger">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Matter ends -->
+
+</div>

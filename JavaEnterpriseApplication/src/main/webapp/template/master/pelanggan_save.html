@@ -1,0 +1,123 @@
+<div class="mainbar">
+
+    <!-- Page heading -->
+    <div class="page-head">
+        <!-- Page heading -->
+        <h2 class="pull-left">
+            Master
+            <!-- page meta -->
+
+        </h2>
+
+        <!-- Breadcrumb -->
+        <!-- <div class="bread-crumb pull-right">
+                <a href="workspace.html"><i class="icon-home"></i> Home</a>
+                Divider
+                <span class="divider">/</span> <a href="#" class="bread-current">{{title}}</a>
+        </div> -->
+
+        <div class="clearfix"></div>
+
+    </div>
+    <!-- Page heading ends -->
+
+
+    <!-- Matter -->
+
+    <div class="matter">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+
+                    <div class="widget wlightblue">
+
+                        <div class="widget-head">
+                            <div class="pull-left">{{title}}</div>
+                            <div class="widget-icons pull-right">
+                                <a ng-click="cancel()" class="wclose"><i class="icon-remove"></i></a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="widget-content">
+                            <div class="padd">
+
+                                <!-- Form starts.  -->
+                                <form name="pelangganEditForm" class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label ng-show="isEdit" class="col-md-2">id</label>
+
+                                        <div class="col-md-5">
+                                            <strong ng-show="isEdit">{{pelanggan.id}}</strong>
+                                            <!-- <input ng-hide="isEdit" maxlength="6" type="text" ng-model="employee.id" placeholder="Isi Id" class="form-control" required>-->
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2">Nama</label>
+
+                                        <div class="col-md-5">
+                                            <input  maxlength="50" type="text" ng-model="pelanggan.nmplgn" placeholder="Isi Nama" class="form-control" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2">Alamat</label>
+
+                                        <div class="col-md-5">
+                                            <textarea  maxlength="255" rows="5" ng-model="pelanggan.almtplgn" placeholder="Isi Alamat" class="form-control" required ></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2">Umur</label>
+
+                                        <div class="col-md-5">
+                                            <input  maxlength="50" type="text" ng-model="pelanggan.umurplgn" placeholder="Isi Umur" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="col-md-2">Jenis Kelamin</label>
+
+                                        <div class="col-md-5">
+                                            <select ng-model="pelanggan.jkplgn" ng-options="item.name as item.name for item in genderList" class="form-control" required>
+                                                <option value="">--Please choose--</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">No Handphone</label>
+
+                                        <div class="col-md-5">
+                                            <input  maxlength="50" type="text" ng-model="pelanggan.nohpplgn" placeholder="Isi No Hp" class="form-control" required>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+
+                        <div class="widget-foot">
+                            <div class="text-right">
+                                <button  type="button" ng-click="pelangganEditForm.$valid && save()" class="btn btn-success">
+                                    Simpan
+                                </button>
+                                <button type="button" ng-click="cancel()" class="btn btn-danger">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Matter ends -->
+
+</div>

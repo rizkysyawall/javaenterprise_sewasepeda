@@ -1,0 +1,121 @@
+<div class="mainbar">
+
+    <!-- Page heading -->
+    <div class="page-head">
+        <!-- Page heading -->
+        <h2 class="pull-left">
+            Master
+            <!-- page meta -->
+
+        </h2>
+        <div class="clearfix"></div>
+
+    </div>
+    <!-- Page heading ends -->
+
+
+    <!-- Matter -->
+
+    <div class="matter">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+
+                    <div class="widget wlightblue">
+
+                        <div class="widget-head">
+                            <div class="pull-left">{{title}}</div>
+                            <div class="widget-icons pull-right">
+                                <a ng-click="cancel()" class="wclose"><i class="icon-remove"></i></a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="widget-content">
+                            <div class="padd">
+
+                                <!-- Form starts.  -->
+                                <form name="pemilikDetailForm" class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label class="col-md-2">Id</label>
+
+                                        <label class="col-md-5">
+                                            <strong>{{sepeda.id}}</strong>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2">Id Pemilik</label>
+
+                                        <label class="col-md-5">
+                                            <strong>{{sepeda.pemilik.id}}</strong>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="col-md-2">Nama Pemilik</label>
+
+                                        <label class="col-md-5">
+                                            <strong>{{sepeda.pemilik.namapemilik}}</strong>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2">Merek</label>
+
+                                        <label class="col-md-5">
+                                            <strong>{{sepeda.merek}}</strong>
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Tipe</label>
+
+                                        <label class="col-md-5">
+                                            <strong>{{sepeda.tipe}}</strong>
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Warna</label>
+
+                                        <label class="col-md-5">
+                                            <strong>{{sepeda.warna}}</strong>
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Thn Produksi</label>
+
+                                        <label class="col-md-5">
+                                            <strong>{{sepeda.thnproduksi}}</strong>
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Kategori</label>
+
+                                        <label class="col-md-5">
+                                            <strong>{{sepeda.kategori}}</strong>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+
+                        <div class="widget-foot">
+                            <div class="text-right">
+                                <button type="button" ng-click="cancel()" class="btn btn-danger">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Matter ends -->
+
+</div>

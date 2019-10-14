@@ -1,0 +1,124 @@
+<div class="mainbar">
+
+    <!-- Page heading -->
+    <div class="page-head">
+        <!-- Page heading -->
+        <h2 class="pull-left">
+            Transaksi
+            <!-- page meta -->
+
+        </h2>
+
+        <!-- Breadcrumb -->
+        <!-- <div class="bread-crumb pull-right">
+                <a href="workspace.html"><i class="icon-home"></i> Home</a>
+                Divider
+                <span class="divider">/</span> <a href="#" class="bread-current">{{title}}</a>
+        </div> -->
+
+        <div class="clearfix"></div>
+
+    </div>
+    <!-- Page heading ends -->
+
+
+    <!-- Matter -->
+
+    <div class="matter">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+
+                    <div class="widget wlightblue">
+
+                        <div class="widget-head">
+                            <div class="pull-left">{{title}}</div>
+                            <div class="widget-icons pull-right">
+                                <a ng-click="cancel()" class="wclose"><i class="icon-remove"></i></a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="widget-content">
+                            <div class="padd">
+
+                                <!-- Form starts.  -->
+                                <form name="trsepedaEditForm" class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label ng-show="isEdit" class="col-md-2">Id</label>
+
+                                        <div class="col-md-5">
+                                            <strong ng-show="isEdit">{{trsepeda.id}}</strong>
+                                            <!-- <input ng-hide="isEdit" maxlength="6" type="text" ng-model="employee.id" placeholder="Isi Id" class="form-control" required>-->
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2">Pelanggan</label>
+
+                                        <div class="col-md-5">
+                                            <select ng-model="trsepeda.pelanggan.id" ng-options="item.id as item.nmplgn for item in pelangganList" class="form-control" required>
+                                                <option value="">--Please choose--</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2">Sepeda</label>
+
+                                        <div class="col-md-5">
+                                            <select ng-model="trsepeda.sepeda.id" ng-options="item.id as item.merek for item in sepedaList" class="form-control" required>
+                                                <option value="">--Please choose--</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2">Tanggal Sewa</label>
+
+                                        <div class="col-md-5">
+                                            <input  maxlength="50" type="text" ng-model="trsepeda.tglsewa" placeholder="Tanggal Sewa" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Tanggal Kembali</label>
+
+                                        <div class="col-md-5">
+                                            <input  maxlength="50" type="text" ng-model="trsepeda.tglkembali" placeholder="Tanggal Kembali" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Harga Sewa</label>
+
+                                        <div class="col-md-5">
+                                            <input  maxlength="50" type="text" ng-model="trsepeda.hargasewa" placeholder="Harga Sewa" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+
+
+                        <div class="widget-foot">
+                            <div class="text-right">
+                                <button  type="button" ng-click="trsepedaEditForm.$valid && save()" class="btn btn-success">
+                                    Simpan
+                                </button>
+                                <button type="button" ng-click="cancel()" class="btn btn-danger">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Matter ends -->
+
+</div>
